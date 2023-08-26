@@ -23,5 +23,30 @@ main{
   /* gap: 8rem; */
 }
 .main-landing-1{
-  width: 30vw;
+  width: 35vw;
+}
+@media(max-width:900px){
+.landing{
+  flex-direction: column;
+  width: 90vw;
+  gap:3rem;
+}
+.main-landing-1{
+  width: 60vw;
+}
+}
+@media(max-width:600px){
+.landing{
+  flex-direction: column;
+  width: 90vw;
+  gap:3rem;
+}
+.main-landing-1{
+  width:90vw;
+}
+}
+@media(max-width:400){
+  html{
+    font-size: 70%;
+  }
 }
