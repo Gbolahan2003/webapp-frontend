@@ -33,9 +33,9 @@ const About = () => {
             </div>
            </div> 
            <div className="about-us-image_container">
-            <div className="pic-1"><Image src={Picture1} alt='leone'/></div>
+            <div className="pic-1 pi"><Image src={Picture1} alt='leone'/></div>
             <div className="picture"><Image src={Picture} alt='leone'/></div>
-            <div className="pic-1"><Image src={Picture2} alt='leone'/></div>
+            <div className="pic-1 pic"><Image src={Picture2} alt='leone'/></div>
             </div>
             
             </section>  

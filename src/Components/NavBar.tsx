@@ -10,7 +10,7 @@ export default function NavBar() {
                 <Image src={Logo} alt="logo" className='w-44 h-12' quality={100}/>
                 </Link>
             <ul className="flex flex-row items-center justify-between">
-                <li><Link href='/about'>About</Link></li>
+                <li><Link href='/About-page'>About</Link></li>
                 <li><Link href='/get-involved'>Get Involved</Link></li>
                 <li><Link href='/contact'>Contact</Link></li>
                 <li><button>Donate</button></li>
