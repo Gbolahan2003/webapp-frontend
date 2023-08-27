@@ -51,8 +51,8 @@ const [opacity, setOpacity] = useState(1)
     
   return (
     <div className='image-slider display'>
-        <Image className='slider-image image-1' style={{opacity:opacity}} src={images[image]} alt='landing' />
-        <Image className='Slider-image slider-background' style={{opacity:opacity}} src={background[image] } alt='landing'/>
+        <Image className='slider-image' style={{opacity:opacity}} src={images[image]} alt='landing'height={500} width={550} />
+        <Image className='Slider-image slider-background' style={{opacity:opacity}} src={background[image] } alt='landing'height={650} width={650}/>
     </div>
   )
 }
