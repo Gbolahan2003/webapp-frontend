@@ -3,14 +3,15 @@
 import React, { useEffect, useState } from 'react'
 
 import Image from 'next/image'
-import LandingImage1 from '../../public/images/assets/landingImage1.png'
-import LandingImage2 from '../../public/images/assets/landingImage2.png'
-import LandingImage3 from '../../public/images/assets/landingImage3.png'
-import '../app/LandingPage/components/landing.css'
+import LandingImage1 from '../../../../public/images/assets/landingImage1.png'
+import LandingImage2 from '../../../../public/images/assets/landingImage2.png'
+import LandingImage3 from '../../../../public/images/assets/landingImage3.png'
+
+import './landing.css'
 import Transition from '@/app/Transition'
-import ground1 from '../../public/images/assets/background1.png'
-import ground2 from '../../public/images/assets/background2.png'
-import ground3 from '../../public/images/assets/background3.png'
+import ground1 from '../../../../public/images/assets/background1.png'
+import ground2 from'../../../../public/images/assets/background2.png'
+import ground3 from '../../../../public/images/assets/background3.png'
 const ImgeComponent = () => {
     const images=[LandingImage1,LandingImage2,LandingImage3]
     const background:any[] = [ground1, ground2, ground3]
@@ -51,8 +52,8 @@ const [opacity, setOpacity] = useState(1)
     
   return (
     <div className='image-slider display'>
-        <Image className='slider-image' style={{opacity:opacity}} src={images[image]} alt='landing'height={500} width={550} />
-        <Image className='Slider-image slider-background' style={{opacity:opacity}} src={background[image] } alt='landing'height={650} width={650}/>
+        <Image className='slider-image image-1' style={{opacity:opacity}} src={images[image]} alt='landing' />
+        <Image className='Slider-image slider-background' style={{opacity:opacity}} src={background[image] } alt='landing'/>
     </div>
   )
 }

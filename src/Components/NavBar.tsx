@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import '@/Styles/styles.css'
+import '../Styles/styles.css'
 import Logo from '../../public/images/png/black-horizontal.png'
 
 export default function NavBar() {
