@@ -13,7 +13,7 @@ import Picture2 from '../../../../public/images/png/About3.png'
  
 const About = () => {
   return (
-    <div>
+    <div className='about-2'> 
         <div className="about-container">
           <section className="first-section">
             <div className="about-main-container">

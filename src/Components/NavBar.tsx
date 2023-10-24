@@ -1,9 +1,23 @@
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
 import '../Styles/styles.css'
 import Logo from '../../public/images/png/black-horizontal.png'
+import MenuLogo from '../../public/images/assets/logo-vertical.png'
+import Hamburger from '../../public/images/icons/hamburger.png'
+import Close from '../../public/images/icons/close.png'
+import { useState } from 'react';
 
 export default function NavBar() {
+    const [showMenu, setShowMenu] = useState(false)
+    const [ ham, setHam ] = useState(Hamburger)
+
+    const toggleNavigation = () => {
+        setShowMenu(!showMenu)
+        setHam(ham === Hamburger ? Close : Hamburger)
+    }
+
     return (
         <nav className='w-full h-24 fixed flex flex-row px-24 py-8 justify-between items-center'>
             <Link href='/'>
